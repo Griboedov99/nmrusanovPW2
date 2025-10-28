@@ -6,27 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		01AC678A2EB0B6D500DEB688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AC67722EB0B6D500DEB688 /* AppDelegate.swift */; };
+		01AC67902EB0B6D500DEB688 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AC677A2EB0B6D500DEB688 /* SceneDelegate.swift */; };
+		01AC67942EB0B6D500DEB688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01AC67732EB0B6D500DEB688 /* Assets.xcassets */; };
+		01AC67D82EB0C9EA00DEB688 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AC67D72EB0C9EA00DEB688 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		01AC67722EB0B6D500DEB688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01AC67732EB0B6D500DEB688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01AC67772EB0B6D500DEB688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01AC677A2EB0B6D500DEB688 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		01AC67D72EB0C9EA00DEB688 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		01B3F56C2E80664E003CF543 /* nmrusanovPW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nmrusanovPW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		01B3F57E2E806650003CF543 /* Exceptions for "nmrusanovPW2" folder in "nmrusanovPW2" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 01B3F56B2E80664E003CF543 /* nmrusanovPW2 */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		01B3F56E2E80664E003CF543 /* nmrusanovPW2 */ = {
+		01AC67962EB0B70C00DEB688 /* Modules */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				01B3F57E2E806650003CF543 /* Exceptions for "nmrusanovPW2" folder in "nmrusanovPW2" target */,
-			);
-			path = nmrusanovPW2;
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		01AC67B32EB0B90F00DEB688 /* Utilities */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -42,10 +46,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01AC677E2EB0B6D500DEB688 /* nmrusanovPW2 */ = {
+			isa = PBXGroup;
+			children = (
+				01AC67D72EB0C9EA00DEB688 /* Constants.swift */,
+				01AC67722EB0B6D500DEB688 /* AppDelegate.swift */,
+				01AC677A2EB0B6D500DEB688 /* SceneDelegate.swift */,
+				01AC67732EB0B6D500DEB688 /* Assets.xcassets */,
+				01AC67772EB0B6D500DEB688 /* Info.plist */,
+				01AC67962EB0B70C00DEB688 /* Modules */,
+				01AC67B32EB0B90F00DEB688 /* Utilities */,
+			);
+			path = nmrusanovPW2;
+			sourceTree = "<group>";
+		};
 		01B3F5632E80664E003CF543 = {
 			isa = PBXGroup;
 			children = (
-				01B3F56E2E80664E003CF543 /* nmrusanovPW2 */,
+				01AC677E2EB0B6D500DEB688 /* nmrusanovPW2 */,
 				01B3F56D2E80664E003CF543 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,7 +92,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				01B3F56E2E80664E003CF543 /* nmrusanovPW2 */,
+				01AC67962EB0B70C00DEB688 /* Modules */,
+				01AC67B32EB0B90F00DEB688 /* Utilities */,
 			);
 			name = nmrusanovPW2;
 			packageProductDependencies = (
@@ -122,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01AC67942EB0B6D500DEB688 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01AC67D82EB0C9EA00DEB688 /* Constants.swift in Sources */,
+				01AC678A2EB0B6D500DEB688 /* AppDelegate.swift in Sources */,
+				01AC67902EB0B6D500DEB688 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +172,9 @@
 				INFOPLIST_FILE = nmrusanovPW2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -176,9 +199,9 @@
 				INFOPLIST_FILE = nmrusanovPW2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
